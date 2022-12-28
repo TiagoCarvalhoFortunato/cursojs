@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
         body {
             background-image: linear-gradient(to right, white, blue);
+
         }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+
         input#soma {
+            font-size: 20px;
+            font-weight: bolder;
             width: 240px;
-            background-color: aquamarine;
+            background-color: rgb(84, 168, 140);
             border: none;
             border-radius: 20px;
             box-shadow: 2px 2px 5px black;
@@ -21,24 +38,40 @@
             color: white;
         }
 
+        article {
+            margin: auto;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 300px;
+            background-color: aquamarine;
+        }
+
+        article > p {
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
     </style>
     <title>Somando Números</title>
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <p>
-        <label for="txtn1">Número: </label>
-        <input type="number" name="txtn1" id="txtn1">
-    </p>
-    <p>
-        <label for="txtn2">Número:</label>
-        <input type="number" name="txtn2" id="txtn2">
-    </p>
-
-    <p><input type="button" value="Somar" onclick="somar()" id="soma"></p>
-    
-
-    <div id="res">Resultado</div>
+    <main>
+        <h1>Somando Valores</h1>
+        <article>
+            <p>
+                <label for="txtn1">Número: </label>
+                <input type="number" name="txtn1" id="txtn1">
+            </p>
+            <p>
+                <label for="txtn2">Número:</label>
+                <input type="number" name="txtn2" id="txtn2">
+            </p>
+            <p><input type="button" value="Somar" onclick="somar()" id="soma"></p>
+            
+            <p id="res">Resultado</p>
+        </article>
+    </main>
 
     <script>
         function somar() {
