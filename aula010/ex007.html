@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input#soma {
+            width: 240px;
+            background-color: aquamarine;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        input#soma:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+    <title>Somando Valores</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <p>
+        <label for="inumero">Número:</label>
+        <input type="number" name="numero" id="inumero">
+    </p>
+
+    <p>
+        <label for="inumero2">Número:</label>
+        <input type="number" name="numero2" id="inumero2">
+    </p>
+
+    <input type="button" value="Somar" onclick="Somar()" id="soma">
+
+    <p id="resultado">Resultado</p>
+
+    <script>
+        function somar() {
+            var num1 = window.document.getElementById('inumero')
+            var num2 = window.document.getElementById('inumero2')
+            var resultado = window.document.getElementsById('resultado')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var s = n1 + n2
+            res.innerHTML = s
+        }
+    </script>
+
+    
+</body>
+</html>

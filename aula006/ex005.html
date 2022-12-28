@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, white, blue);
+            text-shadow: 2px 2px 4px black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Começando os estudos DOM</h1>
+    </header>
+    <main>
+        
+        <p>Aqui vai o resultado</p>
+        <p>Lets go para os primeiros passos em <strong>DOM</strong> </p>
+        <div>
+            Clique em mim
+        </div>
+        <script>
+            var paragrafo = window.document.getElementsByTagName('p')[0]
+            paragrafo.style.color = 'blue'
+            var titulo = window.document.getElementsByTagName('h1')[0]
+            titulo.style.border = '1px solid black'
+            titulo.style.backgroundColor = 'white'
+            titulo.style.webkitBoxShadow = '2px 2px 4px black' 
+
+        </script>
+    </main>
+
+    
+</body>
+</html>
