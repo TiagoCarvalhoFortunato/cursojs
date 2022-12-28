@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(198, 206, 163);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    background-color: rgb(71, 168, 71);
+    text-align: center;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+div {
+    text-align: center;
+    margin: 10px 10px 20px 20px;
+}
+
+#vel {
+    width: 50px;
+}
+
+#res > p{
+    padding: 10px
+}
+
+.clica {
+    display: block;
+    margin: auto;
+    width: 150px;
+}
