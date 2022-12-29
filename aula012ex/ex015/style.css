@@ -26,6 +26,13 @@ section {
     height: 250px;
 }
 
+p#resultado {
+    text-align: center;
+    background-image: linear-gradient(to right, blue, rgb(255, 114, 137));
+    color: white;
+    
+}
+
 div#dados p {
     padding: 10px;
 }
@@ -35,7 +42,11 @@ div#dados p {
 
 }
 
-
+img#foto{
+    display: block;
+    width: 130px;
+    margin: auto;
+}
 
 footer {
     color: white;

@@ -32,10 +32,11 @@ function res() {
             imagem.src = 'imagens/mulher.png'
         } else if (idade > 50){
             imagem.src = 'imagens/idosa.png'
-        }
+        }    
     }
 
-    resultado.innerHTML = 'Aqui temos uma gênero ' + genero + ' com idade de: ' + idade + ' ano(s).'
+
+    resultado.innerHTML = 'Gênero ' + genero + ' com idade de: ' + idade + ' ano(s).'
 }
 
 
