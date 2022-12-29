@@ -1,2 +1,20 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+footer {
+    position: fixed; 
+    left: 50%;
+    bottom: 0px;
+    font-size: 20px;
+    font-style: italic;
+}
