@@ -14,17 +14,32 @@
         </h1>
     </header>
     <section>
-        <div>
-
+        <div id="dado">
+            <p>
+                <label for="inicio">Início:</label>
+                <input type="number" name="inicio" id="inicio">
+            </p>
+            <p>
+                <label for="fim">Fim:</label>
+                <input type="number" name="fim" id="fim">
+            </p>
+            <p>
+                <label for="passo">Passo:</label>
+                <input type="number" name="passo" id="passo">
+            </p>
+            <p>
+                <input type="submit" value="Contar" onclick="conta()">
+            </p>
+            
         </div>
-        <div>
-            contando
-
+        <div id="res">
+           
         </div>
     </section>
     <footer>
         <p>&copy; Lort</p>
     </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>
